@@ -1,0 +1,13 @@
+.subNavbar{
+ 
+  position: sticky;
+  top: 0;
+  height: 50px;
+  background-color: aquamarine;
+  width: 100%;
+}
+
+.pages{
+  flex:0.9;
+  height:100%;
+}
