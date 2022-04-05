@@ -7,7 +7,7 @@ import Select from "@mui/material/Select";
 import Home from "../pages/homepage/Home";
 function SubNavbar() {
   return (
-    <div className="subNavbar">
+    //<div className="subNavbar">
       <div className="subnavigaton">
         <Box
           sx={{
@@ -42,7 +42,7 @@ function SubNavbar() {
           </FormControl>
         </Box>
       </div>
-      </div>
+    //  </div>
 
   );
  

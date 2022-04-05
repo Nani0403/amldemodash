@@ -3,33 +3,31 @@ import "./topbar.css";
 import { Notifications, Menu } from "@mui/icons-material";
 import luffy from "./luffy.png";
 import { Avatar } from "@mui/material";
-import FontAwesomeIcon from "@mui/icons-material"
+
 function Topbar() {
   return (
-
+  
       <div className="topbar">
         <div className="topbarWrapper">
           <div className="topLeft">
-          Aml Dashboard
+            <span className="logo">AML-Dashboard</span>
           </div>
           <div className="topRight">
             <div className="topbarIconContainer">
               <Notifications sx={{ fontSize: 27 }} />
             </div>
-            <li className="avatar">
-              <Avatar imgsrc={luffy} alt="" className="topAvatar" > 
-              <div className="right">
-              <ul>
-               <li><FontAwesomeIcon icon="fa-regular fa-gear" />Settings</li>
-               <li><FontAwesomeIcon icon="fa-solid fa-right-from-bracket" />Logout</li>
-               </ul>
-               </div>
-              </Avatar>
-            </li>
+            <div class="dropdown">
+  <Avatar  img src={luffy} class="dropbtn" />
+  <div class="dropdown-content">
+  <a>Your Profile</a>
+  <a>Settings</a>
+  <a>Logout</a>
+  </div></div>
+            
           </div>
         </div>
       </div>
-    
+  
   );
 }
 
