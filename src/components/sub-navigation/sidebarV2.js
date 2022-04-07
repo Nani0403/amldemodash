@@ -20,7 +20,8 @@ import MailIcon from "@mui/icons-material/Mail";*/
 import Topbar from "../topbar/Topbar";
 import Sidebar from "../topbar/sidebar/Sidebar";
 import SubNavbar from "./SubNavbar";
-
+import { Paper } from "@mui/material";
+import { ThemeProvider, createTheme } from "@material-ui/core/styles";
 const drawerWidth = 240;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
@@ -81,6 +82,8 @@ export default function SidebarV2() {
   };
 
   return (
+    
+   
     <Box sx={{ display: "flex" }}>
    
       <AppBar position="fixed" open={open}>
@@ -136,5 +139,6 @@ export default function SidebarV2() {
       
      
     </Box>
+    
   );
 }

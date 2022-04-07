@@ -1,6 +1,6 @@
 import React from "react";
 import "./sidebar.css";
-import home from "../../pages/homepage/Home";
+// import home from "../../pages/homepage/Home";
 import {
   CalendarToday,
   Dashboard,
