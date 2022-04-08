@@ -1,6 +1,6 @@
 import React from "react";
 import "./sidebar.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import {
   CalendarToday,
@@ -20,20 +20,23 @@ function Sidebar() {
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <li class="px-4 py-1 hover:bg-gray-50 border-b text-gray-600 text-xs">
-                <Home className="sidebarIcon" />
+              <Home className="sidebarIcon" />
 
-                <Link to="/">Home</Link>
-              </li>
+              <NavLink className="navlink" to="/">
+                Home
+              </NavLink>
+
               {/* <li    class="px-4 py-1 hover:bg-gray-50 border-b text-gray-600 text-xs">
-                     <Link to="https://docs.google.com/spreadsheets/d/1qJWe-I26pkV9gEPbPeMtMAPyyCsWmJxF7kx7p-HXC0c/edit#gid=0">View React Commits</Link>
+                     <NavLink to="https://docs.google.com/spreadsheets/d/1qJWe-I26pkV9gEPbPeMtMAPyyCsWmJxF7kx7p-HXC0c/edit#gid=0">View React Commits</NavLink>
                     </li> */}
-              {/*to link pages on the side bar need to use a tag nd href as above */}
+              {/*to NavLink pages on the side bar need to use a tag nd href as above */}
             </li>
             <li className="sidebarListItem">
               <Dashboard className="sidebarIcon" />
 
-              <Link to="/dashboards">Dashboard</Link>
+              <NavLink className="navlink" to="/dashboards">
+                Dashboard
+              </NavLink>
             </li>
           </ul>
           <h3 className="sidebarTitle">Work Space</h3>
@@ -41,19 +44,27 @@ function Sidebar() {
             <li className="sidebarListItem">
               <Mail className="sidebarIcon" />
 
-              <Link to="/inboxs">Inbox</Link>
+              <NavLink className="navlink" to="/inboxs">
+                Inbox
+              </NavLink>
             </li>
             <li className="sidebarListItem">
               <People className="sidebarIcon" />
-              <Link to='/users'>User</Link>
+              <NavLink className="navlink" to="/users">
+                User
+              </NavLink>
             </li>
             <li className="sidebarListItem">
               <CalendarToday className="sidebarIcon" />
-              <Link to='/availability'>Availability</Link>
+              <NavLink className="navlink" to="/availability">
+                Availability
+              </NavLink>
             </li>
             <li className="sidebarListItem">
               <Restore className="sidebarIcon" />
-              <Link to='/workhistory'>Work History</Link>
+              <NavLink className="navlink" to="/workhistory">
+                Work History
+              </NavLink>
             </li>
           </ul>
 
@@ -61,11 +72,15 @@ function Sidebar() {
           <ul className="sidebarList">
             <li className="sidebarListItem">
               <ShowChart className="sidebarIcon" />
-              <Link to='/updates'>Updates</Link>
+              <NavLink className="navlink" to="/updates">
+                Updates
+              </NavLink>
             </li>
             <li className="sidebarListItem">
               <Settings className="sidebarIcon" />
-              <Link to='/settings'>Settings</Link>
+              <NavLink className="navlink" to="/settings">
+                Settings
+              </NavLink>
             </li>
           </ul>
         </div>

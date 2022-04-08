@@ -13,7 +13,7 @@ function SubNavbar() {
           BlockColor: "white",
           display: "flex",
           width: "100%",
-          backgroundColor: "white"
+          backgroundColor: "white",
         }}
       >
         <FormControl sx={{ width: "10%" }}>

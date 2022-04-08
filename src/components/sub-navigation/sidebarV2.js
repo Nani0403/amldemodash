@@ -2,7 +2,7 @@ import * as React from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-import CssBaseline from "@mui/material/CssBaseline";
+// import CssBaseline from "@mui/material/CssBaseline";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 /*import List from "@mui/material/List";
@@ -20,7 +20,7 @@ import MailIcon from "@mui/icons-material/Mail";*/
 import Topbar from "../topbar/Topbar";
 import Sidebar from "../topbar/sidebar/Sidebar";
 import SubNavbar from "./SubNavbar";
-import { ThemeProvider, createTheme } from "@material-ui/core/styles";
+// import { ThemeProvider, createTheme } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Homepg from "../pages/Homepg";
 import Dashboards from "../pages/Dashboards";
@@ -30,9 +30,9 @@ import Availability from "../pages/Availability";
 import Workhistory from "../pages/Workhistory";
 import Updates from "../pages/Updates";
 import Settings from "../pages/Settings";
-import { SettingsAccessibilityOutlined } from "@mui/icons-material";
+// import { SettingsAccessibilityOutlined } from "@mui/icons-material";
 
-const drawerWidth = 240;
+const drawerWidth = 300;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
   ({ theme, open }) => ({

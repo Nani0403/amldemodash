@@ -12,6 +12,7 @@
 }
 
 .sidebarMenu {
+  color: black;
   margin-bottom: 5px;
   margin-left: 5px;
 }
@@ -46,12 +47,18 @@
   font-weight: bolder;
   color: rebeccapurple;
 }
-
+a{
+  text-decoration: none;
+}
 .sidebarIcon {
   margin-right: 30px;
   font-size: 28px !important;
 }
-
+.navlink{
+  
+  color: black;
+  font-size: medium;
+}
 /* .sidebarListItem:hover > .sidebarIcon{
   color:rebeccapurple;
 }  this code is only used to change the icons only */

@@ -26,7 +26,7 @@ function Topbar() {
               <a>Logout</a>
             </div>
           </div>
-          <div>
+          <div className="userName">
             <span> Dheeraj Patil</span>
           </div>
         </div>
