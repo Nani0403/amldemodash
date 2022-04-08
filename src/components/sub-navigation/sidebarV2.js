@@ -20,8 +20,18 @@ import MailIcon from "@mui/icons-material/Mail";*/
 import Topbar from "../topbar/Topbar";
 import Sidebar from "../topbar/sidebar/Sidebar";
 import SubNavbar from "./SubNavbar";
-import { Paper } from "@mui/material";
 import { ThemeProvider, createTheme } from "@material-ui/core/styles";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Homepg from "../pages/Homepg";
+import Dashboards from "../pages/Dashboards";
+import Inboxs from "../pages/Inboxs";
+import Users from "../pages/Users";
+import Availability from "../pages/Availability";
+import Workhistory from "../pages/Workhistory";
+import Updates from "../pages/Updates";
+import Settings from "../pages/Settings";
+import { SettingsAccessibilityOutlined } from "@mui/icons-material";
+
 const drawerWidth = 240;
 
 const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
@@ -82,63 +92,64 @@ export default function SidebarV2() {
   };
 
   return (
-    
-   
-    <Box sx={{ display: "flex" }}>
-   
-      <AppBar position="fixed" open={open}>
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            sx={{ mr: 2, ...(open && { display: "none" }) }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Topbar/>
-         {/*changed typography into topbar */ }
-        </Toolbar>
-        <SubNavbar />
-      </AppBar>
-      <Drawer
-        sx={{
-          width: drawerWidth,
-          flexShrink: 0,
-          "& .MuiDrawer-paper": {
-            width: drawerWidth,
-            boxSizing: "border-box",
-          },
-        }}
-        variant="persistent"
-        anchor="left"
-        open={open}
-      >
-        <DrawerHeader>
-          <IconButton onClick={handleDrawerClose}>
-            {theme.direction === "ltr" ? (
-              <ChevronLeftIcon />
-            ) : (
-              <ChevronRightIcon />
-            )}
-          </IconButton>
-        </DrawerHeader>
-        <Divider />
-        <Sidebar/> 
-        {/*Removed both list*/}
-        <Divider />
-       
-      </Drawer>
-      <Main open={open}>
-        <DrawerHeader />
+    <Router>
+      <Box sx={{ display: "flex" }}>
+        <AppBar position="fixed" open={open}>
+          <Toolbar>
+            <IconButton
+              color= "inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              sx={{ mr: 2, ...(open && { display: "none" }) }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Topbar />
+            {/*changed typography into topbar */}
+          </Toolbar>
+          <SubNavbar />
 
-        {/* //Changessssss--------------------------- */}
-       
-      </Main>
-      
-     
-    </Box>
-    
+          <Routes>
+            <Route path="/" exact element={<Homepg />} />
+            <Route path="/dashboards" element={<Dashboards />} />
+            <Route path="/inboxs" element={<Inboxs />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/availability" element={<Availability />} />
+            <Route path="/workhistory" element={<Workhistory />} />
+            <Route path="/updates" element={<Updates />} />
+            <Route path="/settings" element={<Settings />} />
+          </Routes>
+        </AppBar>
+
+        <Drawer
+          sx={{
+            width: drawerWidth,
+            flexShrink: 0,
+            "& .MuiDrawer-paper": {
+              width: drawerWidth,
+              boxSizing: "border-box",
+            },
+          }}
+          variant="persistent"
+          anchor="left"
+          open={open}
+        >
+          <DrawerHeader>
+            <IconButton onClick={handleDrawerClose}>
+              {theme.direction === "ltr" ? (
+                <ChevronLeftIcon />
+              ) : (
+                <ChevronRightIcon />
+              )}
+            </IconButton>
+          </DrawerHeader>
+          <Divider />
+          <Sidebar />
+          {/*Removed both list*/}
+          <Divider />
+        </Drawer>
+      </Box>
+    </Router>
   );
 }

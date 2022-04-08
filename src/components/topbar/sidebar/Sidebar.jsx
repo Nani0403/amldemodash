@@ -1,6 +1,7 @@
 import React from "react";
 import "./sidebar.css";
-// import home from "../../pages/homepage/Home";
+import { Link } from "react-router-dom";
+
 import {
   CalendarToday,
   Dashboard,
@@ -19,35 +20,40 @@ function Sidebar() {
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-            <li     class="px-4 py-1 hover:bg-gray-50 border-b text-gray-600 text-xs">
-              <Home className="sidebarIcon"/> 
-              <a target="_blank" href="https://docs.google.com/spreadsheets/d/1FZdzonJS694IgK6rbFFz_EfEnQzhGdyOp2ROqGliw8M/edit#gid=132966247"> Home </a>
+              <li class="px-4 py-1 hover:bg-gray-50 border-b text-gray-600 text-xs">
+                <Home className="sidebarIcon" />
+
+                <Link to="/">Home</Link>
               </li>
-              
-            {/*to link pages on the side bar need to use a tag nd href as above */ }
+              {/* <li    class="px-4 py-1 hover:bg-gray-50 border-b text-gray-600 text-xs">
+                     <Link to="https://docs.google.com/spreadsheets/d/1qJWe-I26pkV9gEPbPeMtMAPyyCsWmJxF7kx7p-HXC0c/edit#gid=0">View React Commits</Link>
+                    </li> */}
+              {/*to link pages on the side bar need to use a tag nd href as above */}
             </li>
             <li className="sidebarListItem">
               <Dashboard className="sidebarIcon" />
-              Dashboard
+
+              <Link to="/dashboards">Dashboard</Link>
             </li>
           </ul>
           <h3 className="sidebarTitle">Work Space</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
               <Mail className="sidebarIcon" />
-              Inbox
+
+              <Link to="/inboxs">Inbox</Link>
             </li>
             <li className="sidebarListItem">
               <People className="sidebarIcon" />
-              User
+              <Link to='/users'>User</Link>
             </li>
             <li className="sidebarListItem">
               <CalendarToday className="sidebarIcon" />
-              Availability
+              <Link to='/availability'>Availability</Link>
             </li>
             <li className="sidebarListItem">
               <Restore className="sidebarIcon" />
-              Work History
+              <Link to='/workhistory'>Work History</Link>
             </li>
           </ul>
 
@@ -55,18 +61,17 @@ function Sidebar() {
           <ul className="sidebarList">
             <li className="sidebarListItem">
               <ShowChart className="sidebarIcon" />
-              Updates
+              <Link to='/updates'>Updates</Link>
             </li>
             <li className="sidebarListItem">
               <Settings className="sidebarIcon" />
-              Settings
+              <Link to='/settings'>Settings</Link>
             </li>
           </ul>
         </div>
       </div>
     </div>
-    
   );
-  }
+}
 
 export default Sidebar;
