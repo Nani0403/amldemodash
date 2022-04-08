@@ -46,7 +46,9 @@
   font-weight: bolder;
   color: rebeccapurple;
 }
-
+a{
+  text-decoration: none;
+}
 .sidebarIcon {
   margin-right: 30px;
   font-size: 28px !important;

@@ -20,11 +20,10 @@ function Sidebar() {
           <h3 className="sidebarTitle">Dashboard</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <li class="px-4 py-1 hover:bg-gray-50 border-b text-gray-600 text-xs">
-                <Home className="sidebarIcon" />
+              <Home className="sidebarIcon" />
 
-                <Link to="/">Home</Link>
-              </li>
+              <Link to="/">Home</Link>
+
               {/* <li    class="px-4 py-1 hover:bg-gray-50 border-b text-gray-600 text-xs">
                      <Link to="https://docs.google.com/spreadsheets/d/1qJWe-I26pkV9gEPbPeMtMAPyyCsWmJxF7kx7p-HXC0c/edit#gid=0">View React Commits</Link>
                     </li> */}
@@ -45,15 +44,15 @@ function Sidebar() {
             </li>
             <li className="sidebarListItem">
               <People className="sidebarIcon" />
-              <Link to='/users'>User</Link>
+              <Link to="/users">User</Link>
             </li>
             <li className="sidebarListItem">
               <CalendarToday className="sidebarIcon" />
-              <Link to='/availability'>Availability</Link>
+              <Link to="/availability">Availability</Link>
             </li>
             <li className="sidebarListItem">
               <Restore className="sidebarIcon" />
-              <Link to='/workhistory'>Work History</Link>
+              <Link to="/workhistory">Work History</Link>
             </li>
           </ul>
 
@@ -61,11 +60,11 @@ function Sidebar() {
           <ul className="sidebarList">
             <li className="sidebarListItem">
               <ShowChart className="sidebarIcon" />
-              <Link to='/updates'>Updates</Link>
+              <Link to="/updates">Updates</Link>
             </li>
             <li className="sidebarListItem">
               <Settings className="sidebarIcon" />
-              <Link to='/settings'>Settings</Link>
+              <Link to="/settings">Settings</Link>
             </li>
           </ul>
         </div>
