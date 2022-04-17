@@ -7,9 +7,10 @@
 
 .container{
   display: flex;
+  align-items: stretch;
 }
 
 .pages{
   display: flex;
-  align-items: center;
+  
 }

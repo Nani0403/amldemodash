@@ -1,0 +1,19 @@
+
+.parent {
+  height: 1000px;
+  margin: top 30%;
+  padding: 2rem 2rem;
+  text-align: center;
+}
+.child {
+  display:inline-block;
+  border: 1px solid black;
+  padding: 1rem 1rem;
+  vertical-align: middle;
+  /* ?margin-right: ; */
+  margin:1rem;
+  max-height: fit-content;
+  max-width: fit-content;
+  flex-wrap: wrap;
+  align-content: space-between;
+}

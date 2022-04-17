@@ -1,14 +1,14 @@
 .sidebar {
   flex: 0.2;
-  height: calc(50hv - 25px);
-  background-color: rgb(252, 248, 252);
+  height: 100%;
+  background-color:skyblue;
   position: sticky;
   top: 50px;
 }
 
 .sidebarWrapper {
-  padding: 20px;
-  color: #555;
+  padding: 40px;
+  color: rgba(171, 167, 167, 0);
 }
 
 .sidebarMenu {
@@ -21,7 +21,7 @@
   font-size: 15px;
   display: flex;
   justify-content: left;
-  color: rgb(187, 186, 186);
+  color: rgb(102, 99, 99);
   margin-left: 12px;
 }
 
@@ -55,7 +55,7 @@ a{
   font-size: 28px !important;
 }
 .navlink{
-  
+
   color: black;
   font-size: medium;
 }

@@ -17,21 +17,16 @@ function Topbar() {
           </div>
 
           <div className="dropdown">
-            <div className="flex-row mr-5 justify-between">
-              <Avatar width={24} height={24} src={luffy} />
-            </div>
-            <div className="dropdown-content">
-              <a>Your Profile</a>
-              <a>Settings</a>
-              <a>Logout</a>
-            </div>
-          </div>
-          <div className="userName">
-            <span> Dheeraj Patil</span>
-          </div>
-        </div>
+      <button className="dropbtn"><Avatar src={luffy}/><span class="text">Jatin Mangela</span></button>
+        <div className="dropdown-content">
+        <a class="address" href="#"><span class="picon"><i class="fas fa-map-marker"></i></span>Address</a>
+            <a class="settings" href="#"><span class="picon"><i class="fas fa-cog"></i></span>Settings</a>
+            <a class="logout" href="https://www.hudl.com/login"><span class="picon"><i class="fas fa-sign-out-alt"></i></span>Logout</a>
       </div>
     </div>
+    </div>
+</div>
+</div>
   );
 }
 

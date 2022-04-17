@@ -1,19 +1,15 @@
 import "./App.css";
-import Sidebar from "./components/topbar/sidebar/Sidebar";
-import Topbar from "./components/topbar/Topbar";
-import SubNavbar from "./components/sub-navigation/SubNavbar";
-import SidebarV2 from "./components/sub-navigation/sidebarV2";
-import { Component } from "react";
-import { Router } from "react-router";
+import React from "react";
+import SidebarV2 from '../src/components/sub-navigation/SidebarV2'
 
 function App() {
  
     return (
-     
+      <React.StrictMode>
         <div className="container">
-          <SidebarV2 />
+          <SidebarV2/>
         </div>
-     
+        </React.StrictMode>
     );
   
 }

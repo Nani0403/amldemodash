@@ -25,11 +25,6 @@ function Sidebar() {
               <NavLink className="navlink" to="/">
                 Home
               </NavLink>
-
-              {/* <li    class="px-4 py-1 hover:bg-gray-50 border-b text-gray-600 text-xs">
-                     <NavLink to="https://docs.google.com/spreadsheets/d/1qJWe-I26pkV9gEPbPeMtMAPyyCsWmJxF7kx7p-HXC0c/edit#gid=0">View React Commits</NavLink>
-                    </li> */}
-              {/*to NavLink pages on the side bar need to use a tag nd href as above */}
             </li>
             <li className="sidebarListItem">
               <Dashboard className="sidebarIcon" />
@@ -50,6 +45,7 @@ function Sidebar() {
             </li>
             <li className="sidebarListItem">
               <People className="sidebarIcon" />
+
               <NavLink className="navlink" to="/users">
                 User
               </NavLink>
@@ -72,6 +68,7 @@ function Sidebar() {
           <ul className="sidebarList">
             <li className="sidebarListItem">
               <ShowChart className="sidebarIcon" />
+
               <NavLink className="navlink" to="/updates">
                 Updates
               </NavLink>
