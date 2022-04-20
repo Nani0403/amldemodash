@@ -3,11 +3,14 @@
 * {
   font-family: "Source-san", sans-serif;
   margin: 0px;
+  
 }
 
 .container{
   display: flex;
   align-items: stretch;
+  width:540px;
+  height: 450px;
 }
 
 .pages{

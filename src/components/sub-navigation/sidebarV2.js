@@ -162,7 +162,8 @@ import luffy from "../topbar/luffy.png";
 // }
 const drawerWidth = 320;
 const appbarheight = 120;
-const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
+const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })
+(
   ({ theme, open }) => ({
     flexGrow: 1,
     padding: theme.spacing(3),
@@ -178,6 +179,7 @@ const Main = styled("main", { shouldForwardProp: (prop) => prop !== "open" })(
       }),
       marginLeft: 0,
     }),
+   
   })
 );
 
@@ -218,6 +220,7 @@ export default function SidebarV2() {
   const handleDrawerClose = () => {
     setOpen(false);
   };
+ 
 
   return (
     <Box sx={{ display: "flex" }}>
@@ -251,7 +254,6 @@ export default function SidebarV2() {
           variant="persistent"
           anchor="left"
           open={open}
-          
         >
           <DrawerHeader src={luffy}>
             <IconButton onClick={handleDrawerClose}>
@@ -269,7 +271,7 @@ export default function SidebarV2() {
         <Main open={open}>
           <DrawerHeader />
 
-          <Routes>
+          <Routes className>
             <Route path="/" exact element={<Homepg />} />
             <Route path="/dashboards" element={<Dashboards />} />
             <Route path="/inboxs" element={<Inboxs />} />

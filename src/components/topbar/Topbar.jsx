@@ -17,11 +17,11 @@ function Topbar() {
           </div>
 
           <div className="dropdown">
-      <button className="dropbtn"><Avatar src={luffy}/><span class="text">Jatin Mangela</span></button>
+      <button className="dropbtn"><Avatar src={luffy}/><span className="text">Jatin Mangela</span></button>
         <div className="dropdown-content">
-        <a class="address" href="#"><span class="picon"><i class="fas fa-map-marker"></i></span>Address</a>
-            <a class="settings" href="#"><span class="picon"><i class="fas fa-cog"></i></span>Settings</a>
-            <a class="logout" href="https://www.hudl.com/login"><span class="picon"><i class="fas fa-sign-out-alt"></i></span>Logout</a>
+        <a className="address" href="#"><span className="picon"><i className="fas fa-map-marker"></i></span>Address</a>
+            <a className="settings" href="#"><span className="picon"><i className="fas fa-cog"></i></span>Settings</a>
+            <a className="logout" href="https://www.hudl.com/login"><span className="picon"><i className="fas fa-sign-out-alt"></i></span>Logout</a>
       </div>
     </div>
     </div>
