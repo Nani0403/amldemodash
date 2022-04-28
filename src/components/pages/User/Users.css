@@ -1,0 +1,76 @@
+/* .userDetails {} */
+
+
+.userInfobar {
+  height: 70px;
+  width: 100%;
+}
+
+.userWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.totalUsers {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.leftIconContainer {
+  display: flex;
+  margin: 12px;
+  justify-content: space-between;
+}
+
+.btnAdd {
+  background-color: black;
+  border: none;
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  height: 40px;
+}
+
+.addNew {
+  padding: 15px;
+}
+
+
+.btnIcon {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.space {
+  width: 100px;
+  height: auto;
+  display: inline-block;
+}
+
+/* .btnAdd:hover {
+   
+} */
+
+.line {
+  border: 1px solid whitesmoke;
+}
+
+.rightIconContainer {
+  display: flex;
+}
+
+.rightIcons {
+  margin: 0 10px 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap');
+
+.cardProfile{
+  background-color: #95e6c9;
+  border-radius: 20px;
+  display: inline-block;
+  margin: 10px;
+  color: black;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.cardDetails{
+  text-align: center;
+  margin-top: 5px;
+  font-family: 'Source-sans';
+  font-size: 15px;
+
+}
+img{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+}
+.cardProfile:hover{
+  transform: scale(1.1); 
+}

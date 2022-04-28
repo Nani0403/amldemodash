@@ -1,0 +1,12 @@
+.searchBox {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .inputBox {
+    padding: 10px;
+    background-color: lightsteelblue;
+    border-radius: 10px;
+  }
