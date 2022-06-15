@@ -5,6 +5,7 @@ import {
   GridColDef,
   GridValueGetterParams,
 } from '@mui/x-data-grid';
+import "../Dashboard/dashboards.css"
 import Paper from "@mui/material/Paper";
 import { Button, Checkbox } from '@mui/material';
 import { isLabelWithInternallyDisabledControl } from '@testing-library/user-event/dist/utils';
@@ -57,10 +58,7 @@ export default function DataTable1() {
       headerAlign: 'center',
       align: 'center',
       value: 'lableid',
-      cells: () => {
-         return(
-        <label onPageChange={(e) =>setLabel(e.target.value) }/>
-      )}
+     
     },
     {
       field: 'Action',
@@ -72,7 +70,7 @@ export default function DataTable1() {
           <input className="ckk"
             onClick={() => handleClick(data.row)}
             type={'checkbox'}
-            onPageChange={(e) =>setCheck(e.target.checked) }
+            
           />
         );
       },
@@ -85,17 +83,17 @@ export default function DataTable1() {
       width: 100,
       value:'status',
       renderCell: (data) => {
-        return <text onPageChange={(e) =>setStatus(e.target.value) } style={{color:data.row.select === true ? 'green' : 'red'}}>{data.row.select === true ? 'Done' : 'Pending'}</text>;
+        return <text style={{color:data.row.select === true ? 'green' : 'red'}}>{data.row.select === true ? 'Done' : 'Pending'}</text>;
       },
     },
   ];
-  function handleData(e){
-    e.preventDefault()
-    console.warn("all data", lableid,checkbx,status)
-  }
-  const [lableid, setLabel] = useState("");
-  const [checkbx, setCheck]=useState("");
-  const [status, setStatus] = useState("");
+  // function handleData(e){
+  //   e.preventDefault()
+  //   console.warn("all data", lableid,checkbx,status)
+  // }
+  // const [lableid, setLabel] = useState("");
+  // const [checkbx, setCheck]=useState("");
+  // const [status, setStatus] = useState("");
 
 
   const handleClick = (data) => {
@@ -106,10 +104,10 @@ export default function DataTable1() {
   };
   return ( 
    
-    <div style={{ alignItems:'center' ,height: '900px', width: '1200px',marginTop: '3%'}} >
+    <div style={{ alignItems:'center' ,height: "100%", width: '1500px',marginTop: '3%'}} >
       {' Soccer det'}
       <DataGrid
-        sx={{m:2}}
+        sx={{m:2, height:"800px"}}
         rows={rowData}
         columns={columns}
         pageSize={100}

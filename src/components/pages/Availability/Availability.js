@@ -1,4 +1,5 @@
 import React from 'react'
+import "../Availability/availability.css"
 // import FullCalendar from '@fullcalendar/react' ;// must go before plugins
 // import dayGridPlugin from '@fullcalendar/react';
  function Availability()  {
@@ -14,7 +15,9 @@ import React from 'react'
       //     right:"today,dayGridDay,dayGridWeek,dayGridMonth",
       //   }}
       // />
-      <h1> Availability </h1>
+      <div style={{ alignItems:'center' ,height: '900px', width: '1500px',marginTop: '3%'}} >
+       Availability 
+       </div>
     );
   
 }
