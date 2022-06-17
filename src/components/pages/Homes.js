@@ -1,7 +1,7 @@
 import React from "react";
-import "./inboxs.css"
+import "./homes.css"
 
-function Inboxs() {
+function Homes() {
  
 
   return (
@@ -13,9 +13,9 @@ function Inboxs() {
         marginTop: "3%",
       }}
     >
-     <h1>Inbox</h1>
+     <h1>Home Pg</h1>
     </div>
   );
 }
-export default Inboxs;
+export default Homes
 ;

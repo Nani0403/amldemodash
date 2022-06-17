@@ -2,7 +2,7 @@ import * as React from "react";
 import { styled, useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
-// import CssBaseline from "@mui/material/CssBaseline";
+import CssBaseline from "@mui/material/CssBaseline";
 import MuiAppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 /*import List from "@mui/material/List";
@@ -17,19 +17,25 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
 import MailIcon from "@mui/icons-material/Mail";*/
-import Topbar from "../topbar/Topbar";
-import Sidebar from "../topbar/sidebar/Sidebar";
-import SubNavbar from "./SubNavbar";
+import Topbar from "../Navigators/Topbar/Topbar";
+import Sidebar from "../Navigators/Sidebar/Sidebar";
+import Navbar from "../Navigators/Navbar/Navbar";
 // import { ThemeProvider, createTheme } from "@material-ui/core/styles";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Homepg from "../pages/Homepg";
-import Dashboards from "../pages/Dashboards";
-import Inboxs from "../pages/Inboxs";
-import Users from "../pages/Users";
-import Availability from "../pages/Availability";
-import Workhistory from "../pages/Workhistory";
-import Updates from "../pages/Updates";
-import Settings from "../pages/Settings";
+import Homes from "../Pages/Homes";
+import Dashboards from "../Pages/Dashboards";
+import Inboxs from "../Pages/Inboxs";
+import Users from "../Pages/Users/User";
+import Availability from "../Pages/Availability";
+import Workhistory from "../Pages/Workhistory";
+import Updates from "../Pages/Updates";
+import Settings from "../Pages/Settings";
+import Afe from "../Pages/Navpages/Afe";
+import Afd from "../Pages/Navpages/Afd";
+import Basketballe from "../Pages/Navpages/Basketballe";
+import Basketballd from "../Pages/Navpages/Basketballd";
+import Soccere from "../Pages/Navpages/Soccere";
+import Soccerd from "../Pages/Navpages/Soccerd";
 // import { SettingsAccessibilityOutlined } from "@mui/icons-material";
 
 const drawerWidth = 300;
@@ -94,7 +100,8 @@ export default function SidebarV2() {
   return (
     <Router>
       <Box sx={{ display: "flex" }}>
-        <AppBar position="fixed" open={open}>
+        <CssBaseline/>
+        <AppBar position="fixed" open={open} sx={{backgroundColor: "dodgerblue"}}>
           <Toolbar>
             <IconButton
               color= "inherit"
@@ -108,19 +115,10 @@ export default function SidebarV2() {
             <Topbar />
             {/*changed typography into topbar */}
           </Toolbar>
-          <SubNavbar />
-
-          <Routes>
-            <Route path="/" exact element={<Homepg />} />
-            <Route path="/dashboards" element={<Dashboards />} />
-            <Route path="/inboxs" element={<Inboxs />} />
-            <Route path="/users" element={<Users />} />
-            <Route path="/availability" element={<Availability />} />
-            <Route path="/workhistory" element={<Workhistory />} />
-            <Route path="/updates" element={<Updates />} />
-            <Route path="/settings" element={<Settings />} />
-          </Routes>
-        </AppBar>
+          <Navbar />
+          </AppBar>
+         
+    
 
         <Drawer
           sx={{
@@ -149,6 +147,25 @@ export default function SidebarV2() {
           {/*Removed both list*/}
           <Divider />
         </Drawer>
+        <Main open={open}>
+          <DrawerHeader/>
+        <Routes>
+            <Route path="/" exact element={<Homes />} />
+            <Route path="/dashboards" element={<Dashboards />} />
+            <Route path="/inboxs" element={<Inboxs />} />
+            <Route path="/users" element={<Users />} />
+            <Route path="/availability" element={<Availability />} />
+            <Route path="/workhistory" element={<Workhistory />} />
+            <Route path="/updates" element={<Updates />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/afe" element={<Afe/>}/>
+            <Route path="/basketballe" element={<Basketballe/>}/>
+            <Route path="/soccere" element={<Soccere/>}/>
+            <Route path="/afd" element={<Afd/>}/>
+            <Route path="/basketballd" element={<Basketballd/>}/>
+            <Route path="/soccerd" element={<Soccerd/>}/>
+          </Routes>
+        </Main>
       </Box>
     </Router>
   );
