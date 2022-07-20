@@ -1,0 +1,105 @@
+.topbar {
+  width: 100%;
+  position: static;
+  top: 0;
+  color: black;
+}
+.topbarWrapper {
+  height: 100%;
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.topRight {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  cursor: pointer;
+}
+.topbarIconContainer {
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+.avatar {
+  display: flex;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 50%;
+  align-items: center;
+}
+.topAvatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  padding-left: 5px;
+}
+.profile_Img {
+  background-image: url(../luffy.png);
+}
+.dropbtn {
+  position: relative;
+ background-color: dodgerblue;
+  border: none;
+  width: 260px;
+  height: 63px;
+vertical-align: middle;
+display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: -35px;
+}
+.dropbtn img{
+width:70px;
+height:58px;
+border-radius:85%;
+}
+.text{
+font-size:25px;
+text-align: center;
+padding: 0.45em;
+
+}
+.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display:none;
+  position: absolute;
+  background-color: rgb(104, 95, 126);
+  width: 260px;
+  vertical-align: middle;
+  margin-top: -17px;
+  float: right;
+  }
+.dropdown-content a {
+  color: rgb(241, 166, 27);
+  padding: 15px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color:white;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: rgb(58, 20, 147);}
+.picon{
+  margin-right: 10px;
+}
+.dropdown-content logout settings address{
+  font-size: 252px;
+}
+.address{font-size:20px;
+}
+.logout{font-size:20px ;}
+.settings{font-size:20px ;}
+
+
+
+
+
+
