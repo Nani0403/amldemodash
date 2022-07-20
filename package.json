@@ -32,7 +32,7 @@
     "react-native-navigation": "^7.26.0",
     "react-router": "^6.3.0",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.0",
+    "react-scripts": "^5.0.1",
     "react-table": "^7.7.0",
     "styled-components": "^5.3.5",
     "tailwind": "^4.0.0",
@@ -62,5 +62,23 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "tailwind.config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nani0403/amldemodash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nani0403/amldemodash/issues"
+  },
+  "homepage": "https://github.com/Nani0403/amldemodash#readme",
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^8.2.5",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1"
   }
 }
