@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import SidebarV2 from '../src/components/sub-navigation/SidebarV2'
+import SidebarV2 from './components/sub-navigation/SidebarV2'
 
 function App() {
  
